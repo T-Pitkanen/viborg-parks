@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Patua+One&display=swap');
+
+:root {
+  --main-bg-color: #F1F7EE;
+  --main-color: #195e50;
+  --header-font: 'Patua One', cursive;
+  --body-font: 'Maven Pro', sans-serif;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "viborg-parks",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Tiia Pitkänen</h1>\r <p align=\"center\"><strong>School Project - Parks and Gardens around Viborg</strong>\r <br>Website where different parks and gardens around Viborg are displayed</p>\r <br/>\r <div align=\"center\"><img src=\"demo.gif\"></img></div>\r <h2>About</h2>\r The assignment was to build a website with a theme around photos you took in your local area.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Pitkanen/viborg-parks.git"
+  },
+  "author": "Tiia Pitkänen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Pitkanen/viborg-parks/issues"
+  },
+  "homepage": "https://github.com/T-Pitkanen/viborg-parks#readme"
+}
