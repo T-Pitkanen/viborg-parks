@@ -2,6 +2,9 @@
 @import url(style/reset.css);
 @import url(style/var.css);
 
+
+
+
 /* NAV */
 
 nav {
@@ -34,6 +37,7 @@ header,
 .hero-img img {
   width: 100%;
   filter: brightness(85%);
+  border-bottom: 1px solid black;
 }
 
 .hero-img {
@@ -54,4 +58,84 @@ header,
   color: white;
   font-size: 1.75rem;
   width: 70%;
+}
+
+/* PARKS */
+
+.parks {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+/**** INFO ****/
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.info p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  width: 70%;
+}
+
+/* PARKS CONTAINER */
+
+.parks-container {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.park-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.park-wrapper img {
+  max-width: 70%;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.park-info {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  color: white;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 10%;
+  bottom: -20%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.park-info h3 {
+  font-family: var(--header-font);
+  font-size: 20px;
+}
+
+.park-info p {
+  font-weight: 300;
+}
+
+.left {
+  right: 40%;
 }
