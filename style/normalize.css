@@ -62,7 +62,6 @@ h6 {
 
 h1 {
 	font-size: 2em;
-	margin: 0.67em 0;
 }
 
 p {
@@ -81,8 +80,11 @@ fieldset {
 
 hr {
 	box-sizing: content-box;
-	height: 0;
 	overflow: visible;
+	border: none;
+	height: 1px;
+	color: black;
+	background-color: black;
 }
 
 pre {
