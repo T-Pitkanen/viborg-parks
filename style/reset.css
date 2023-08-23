@@ -22,3 +22,7 @@ p,
 span {
 	font-family: var(--body-font);
 }
+
+li {
+	line-height: 1.75;
+}
