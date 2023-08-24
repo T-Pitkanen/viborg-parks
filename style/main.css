@@ -32,11 +32,15 @@ header,
   width: 100%;
   filter: brightness(85%);
   border-bottom: 1px solid black;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
 }
 
 .hero-img {
   position: relative;
   text-align: center;
+
 }
 
 .hero-header {
@@ -220,22 +224,30 @@ footer {
   }
 
 
-
   .info p {
     width: 50%;
     font-size: 20px;
   }
 
 
+  .parks-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    row-gap: 10rem;
+  }
+
+
   .park-wrapper img {
-    max-width: 50%;
+    width: 100%;
+    height: auto;
   }
 
   .park-info {
     border: 1px solid black;
-    width: 25%;
-    right: 20%;
-    bottom: -3%;
+    width: 40%;
+    right: 30%;
+    bottom: -5%;
   }
 
   .park-info p {
@@ -248,5 +260,64 @@ footer {
 
   .left {
     right: 55%;
+  }
+}
+
+@media (min-width:1600px) {
+
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+
+  .nav-container {
+    padding: 0.75rem 2rem;
+  }
+
+  .hero-img img {
+    height: 80vh;
+  }
+
+  .hero-header {
+    top: 45%;
+  }
+
+  .hero-header h1 {
+    font-size: 4.5rem;
+    width: 40%;
+  }
+
+
+  .info p {
+    width: 50%;
+    font-size: 22px;
+  }
+
+
+  .park-wrapper img {
+    max-width: 50%;
+  }
+
+  .park-info {
+    border: 1px solid black;
+    width: 25%;
+    right: 20%;
+    bottom: -3%;
+    padding: 2rem;
+  }
+
+  .park-info p {
+    font-size: 20px;
+  }
+
+  .park-info h3 {
+    font-size: 1.75rem
+  }
+
+  .left {
+    right: 55%;
+  }
+
+  footer {
+    font-size: 18px;
   }
 }
