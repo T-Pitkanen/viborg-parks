@@ -82,7 +82,7 @@ hr {
 	box-sizing: content-box;
 	overflow: visible;
 	border: none;
-	height: 1px;
+	height: 1.5px;
 	color: black;
 	background-color: black;
 }
