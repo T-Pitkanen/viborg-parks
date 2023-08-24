@@ -120,15 +120,17 @@ header,
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .park-info h3 {
   font-family: var(--header-font);
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .park-info p {
   font-weight: 300;
+
 }
 
 .left {
@@ -150,9 +152,9 @@ footer {
 
 /****************** RESPONSIVE **********************/
 
-/* TABLET */
 
-@media (min-width:1024px) {
+
+@media (min-width:1024px) and (max-width:1280px) {
 
   .hero-img img {
     height: 70vh;
@@ -191,4 +193,60 @@ footer {
     right: 55%;
   }
 
+}
+
+
+@media (min-width:1280px) and (max-width:1600px) {
+
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+
+  .nav-container {
+    padding: 0.75rem 2rem;
+  }
+
+  .hero-img img {
+    height: 80vh;
+  }
+
+  .hero-header {
+    top: 45%;
+  }
+
+  .hero-header h1 {
+    font-size: 3rem;
+    width: 50%;
+  }
+
+
+
+  .info p {
+    width: 50%;
+    font-size: 20px;
+  }
+
+
+  .park-wrapper img {
+    max-width: 50%;
+  }
+
+  .park-info {
+    border: 1px solid black;
+    width: 25%;
+    right: 20%;
+    bottom: -3%;
+  }
+
+  .park-info p {
+    font-size: 20px;
+  }
+
+  .park-info h3 {
+    font-size: 1.75rem
+  }
+
+  .left {
+    right: 55%;
+  }
 }
