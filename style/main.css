@@ -293,29 +293,38 @@ footer {
   }
 
 
-  .park-wrapper img {
-    max-width: 50%;
+  .park-info {
+    text-align: center;
+    border: 1px solid black;
+    width: 40%;
+    right: 30%;
+    bottom: -5%;
   }
 
-  .park-info {
-    border: 1px solid black;
-    width: 25%;
-    right: 20%;
-    bottom: -3%;
-    padding: 2rem;
+  .parks-container {
+    padding: 0 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    row-gap: 15rem;
+  }
+
+  .park-wrapper {
+    width: 100%;
+  }
+
+  .park-wrapper img {
+    max-width: 70%;
   }
 
   .park-info p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .park-info h3 {
     font-size: 1.75rem
   }
 
-  .left {
-    right: 55%;
-  }
 
   footer {
     font-size: 18px;
