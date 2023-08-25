@@ -105,7 +105,7 @@ header,
   border: 1px solid black;
   /* border: 1px solid black; */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -270,7 +270,7 @@ footer {
   }
 
   .nav-container {
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .hero-img img {
@@ -302,6 +302,7 @@ footer {
   }
 
   .parks-container {
+    margin-top: 15vh;
     padding: 0 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
