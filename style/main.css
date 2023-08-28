@@ -78,7 +78,8 @@ header,
 
 .info p {
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9625rem + 0.1875vw, 1.1875rem);
   width: 70%;
 }
 
@@ -101,6 +102,7 @@ header,
 }
 
 .park-wrapper img {
+  border-radius: 2%;
   max-width: 70%;
   border: 1px solid black;
   /* border: 1px solid black; */
@@ -111,7 +113,10 @@ header,
 
 .park-info {
   /* border: 1px solid black; */
+  border-radius: 3%;
   width: 50%;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.1rem);
   padding: 1rem;
   display: flex;
   gap: 0.5rem;
@@ -177,9 +182,6 @@ footer {
     width: 50%;
   }
 
-  .info p {
-    font-size: 18px;
-  }
 
   .park-wrapper img {
     max-width: 50%;
@@ -226,7 +228,7 @@ footer {
 
   .info p {
     width: 50%;
-    font-size: 20px;
+
   }
 
 
@@ -244,23 +246,19 @@ footer {
   }
 
   .park-info {
+    text-align: center;
     border: 1px solid black;
     width: 40%;
     right: 30%;
     bottom: -5%;
   }
 
-  .park-info p {
-    font-size: 20px;
-  }
 
   .park-info h3 {
     font-size: 1.75rem
   }
 
-  .left {
-    right: 55%;
-  }
+
 }
 
 @media (min-width:1600px) {
@@ -270,7 +268,7 @@ footer {
   }
 
   .nav-container {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 10rem;
   }
 
   .hero-img img {
@@ -289,7 +287,6 @@ footer {
 
   .info p {
     width: 50%;
-    font-size: 22px;
   }
 
 
@@ -318,9 +315,7 @@ footer {
     max-width: 70%;
   }
 
-  .park-info p {
-    font-size: 18px;
-  }
+
 
   .park-info h3 {
     font-size: 1.75rem
