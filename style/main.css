@@ -5,23 +5,27 @@ nav {
 }
 
 .nav-container {
-  z-index: 99;
-  padding: 0.7rem 2.75rem;
-  position: fixed;
-  width: 100%;
-  background-color: var(--main-color);
-  justify-content: space-between;
+
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  z-index: 99;
+
+  width: 100%;
+  padding: 0.7rem 2.75rem;
+  background-color: var(--main-color);
+
   box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.72);
   -webkit-box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.72);
   -moz-box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.72);
 }
 
 .nav-gallery-wrapper a {
-  text-decoration: none;
   font-family: var(--header-font);
   font-size: 0.75rem;
+  text-decoration: none;
 }
 
 .icon {
@@ -38,9 +42,12 @@ header,
 }
 
 .hero-img img {
-  object-fit: cover;
+
   width: 100%;
+
   filter: brightness(75%);
+
+  object-fit: cover;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
@@ -53,19 +60,24 @@ header,
 }
 
 .hero-header {
-  position: absolute;
-  top: 30%;
-  width: 100%;
+
   display: flex;
   justify-content: center;
+
+  position: absolute;
+  top: 30%;
+
+  width: 100%;
 }
 
 .hero-header h1 {
+
+  width: 70%;
+
   font-family: var(--header-font);
-  color: white;
   font-size: 1.75rem;
   font-size: clamp(1.75rem, 1.2rem + 2.75vw, 4.5rem);
-  width: 70%;
+  color: white;
 }
 
 /* PARKS */
@@ -78,86 +90,125 @@ header,
 /**** INFO ****/
 
 .info {
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+
   width: 100%;
   padding: 3rem 0;
+
+  gap: 2rem;
 }
 
 .info p {
+
+  width: 70%;
+
   font-family: var(--body-font);
   font-size: 1rem;
   font-size: clamp(1rem, 0.9625rem + 0.1875vw, 1.1875rem);
-  width: 70%;
 }
 
 .info-hr {
-  margin-left: 15%;
+
   width: 70%;
   height: 1.85px;
+  margin-left: 15%;
   background-color: rgb(167, 167, 167);
 }
 
 .left-info,
 .right-info {
-  width: 100%;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
   gap: 1rem;
 }
 
 /* PARKS CONTAINER */
 
 .parks-container {
-  margin-top: 10vh;
+
   display: flex;
   flex-direction: column;
+
+  margin-top: 10vh;
+
   gap: 10rem;
 }
 
 .park-wrapper {
-  width: 100%;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
   position: relative;
+
+  width: 100%;
 }
 
 .park-wrapper img {
-  object-fit: cover;
-  border-radius: 2%;
+
   width: 70%;
   height: auto;
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 2%;
+  border-radius: 17px;
+  background: rgba(217, 217, 217, 0.58);
+
+  transition: all 0.5s;
+
+  object-fit: cover;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.park-wrapper img:hover {
+
+  /* border: 1px solid black; */
+
+  transform: scale(1.009);
+
+  cursor: pointer;
+}
+
+.park-wrapper img:active {
+
+  transform: scale(1) rotateZ(0.4deg);
+  transition: all 0.2s;
 }
 
 .park-info {
-  /* border: 1px solid black; */
-  border-radius: 3%;
-  width: 50%;
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.90rem + 0.125vw, 1.1rem);
-  padding: 1rem;
+
   display: flex;
-  gap: 0.5rem;
   flex-direction: column;
-  color: white;
-  background-color: var(--main-color);
+
   position: absolute;
   right: 10%;
   bottom: -20%;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
+  width: 50%;
+  padding: 1rem;
+  border-radius: 3%;
+  background-color: var(--main-color);
+
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.90rem + 0.125vw, 1.1rem);
+  color: white;
+
+  /* border: 1px solid black; */
+  gap: 0.5rem;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
 
 }
 
@@ -176,18 +227,38 @@ header,
   right: 40%;
 }
 
+/* MAP */
+.parks-map {
+
+  width: 100%;
+  margin-top: 25vh;
+
+  text-align: center;
+}
+
+.parks-map-map {
+
+  border: 25px;
+
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+}
+
 /* FOOTER */
 
 footer {
-  color: white;
-  background-color: var(--main-color);
-  margin-top: 20vh;
-  height: 10vh;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+  margin-top: 10vh;
+  background-color: var(--main-color);
+
   font-size: 1rem;
   font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  color: white;
 }
 
 
@@ -251,7 +322,6 @@ footer {
   }
 
   .park-info {
-    border: 1px solid black;
     width: 25%;
     right: 20%;
     bottom: -3%;
@@ -321,7 +391,6 @@ footer {
   }
 
   .park-info {
-    border: 1px solid black;
     width: 25%;
     right: 20%;
     bottom: -3%;
@@ -412,7 +481,6 @@ footer {
 
   .park-info {
     text-align: center;
-    border: 1px solid black;
     width: 45%;
     right: 30%;
     bottom: -5%;
@@ -425,6 +493,14 @@ footer {
 
   .nav-icon {
     font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-gallery-wrapper a {
+    font-size: 1rem;
   }
 
   .nav-container {
@@ -481,7 +557,7 @@ footer {
 
   .park-info {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(61, 61, 61);
     width: 40%;
     right: 30%;
     bottom: -5%;
