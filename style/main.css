@@ -6,10 +6,11 @@ nav {
 
 .nav-container {
   z-index: 99;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 2.75rem;
   position: fixed;
   width: 100%;
   background-color: var(--main-color);
+  justify-content: space-between;
   display: flex;
   align-items: center;
   box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.72);
@@ -17,9 +18,18 @@ nav {
   -moz-box-shadow: 0px 7px 28px -5px rgba(0, 0, 0, 0.72);
 }
 
+.nav-gallery-wrapper a {
+  text-decoration: none;
+  font-family: var(--header-font);
+  font-size: 0.75rem;
+}
+
+.icon {
+  font-size: 1rem;
+}
+
+
 /* HERO */
-
-
 
 header,
 .hero-container {
@@ -31,9 +41,9 @@ header,
   object-fit: cover;
   width: 100%;
   filter: brightness(75%);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
 }
 
 .hero-img {
@@ -61,7 +71,7 @@ header,
 /* PARKS */
 
 .parks {
-  margin-top: 10vh;
+  margin-top: 8vh;
   width: 100%;
 }
 
@@ -120,10 +130,11 @@ header,
 }
 
 .park-wrapper img {
+  object-fit: cover;
   border-radius: 2%;
-  max-width: 70%;
+  width: 70%;
+  height: auto;
   border: 1px solid black;
-  /* border: 1px solid black; */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
@@ -134,7 +145,7 @@ header,
   border-radius: 3%;
   width: 50%;
   font-size: 1rem;
-  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.1rem);
+  font-size: clamp(1rem, 0.90rem + 0.125vw, 1.1rem);
   padding: 1rem;
   display: flex;
   gap: 0.5rem;
@@ -150,7 +161,7 @@ header,
 
 }
 
-.park-info h3 {
+.park-info h2 {
   font-family: var(--header-font);
   font-size: 1.2rem;
   font-size: clamp(1.2rem, 1.0899999999999999rem + 0.55vw, 1.75rem);
@@ -182,7 +193,74 @@ footer {
 
 /****************** RESPONSIVE **********************/
 
+@media (min-width:640px) and (max-width:1024px) {
+  .nav-container {
+    padding: 0.5rem 10%;
+  }
 
+  .hero-img img {
+    height: 60vh;
+  }
+
+  .hero-header {
+    top: 45%;
+  }
+
+  .hero-header h1 {
+    width: 50%;
+  }
+
+  .parks {
+    margin-top: 15vh;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem;
+  }
+
+
+  .info-hr {
+    margin-left: 15%;
+    width: 70%;
+    height: 1.85px;
+    background-color: rgb(167, 167, 167);
+  }
+
+  .left-info,
+  .right-info {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+  .info p {
+    width: 100%;
+  }
+
+
+  .park-wrapper img {
+    max-width: 50%;
+  }
+
+  .park-info {
+    border: 1px solid black;
+    width: 25%;
+    right: 20%;
+    bottom: -3%;
+  }
+
+  .left {
+    right: 55%;
+  }
+}
 
 @media (min-width:1024px) and (max-width:1280px) {
 
@@ -259,7 +337,11 @@ footer {
 @media (min-width:1280px) and (max-width:1600px) {
 
   .nav-icon {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.45rem;
   }
 
   .nav-container {
@@ -288,7 +370,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 8rem;
     padding: 3rem;
   }
 
@@ -319,18 +401,19 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     row-gap: 10rem;
+    padding: 0 11rem;
   }
 
 
   .park-wrapper img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 90%;
   }
 
   .park-info {
     text-align: center;
     border: 1px solid black;
-    width: 40%;
+    width: 45%;
     right: 30%;
     bottom: -5%;
   }
