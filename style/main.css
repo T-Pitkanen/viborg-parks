@@ -80,6 +80,29 @@ header,
   color: white;
 }
 
+/* DECO */
+
+.decoration-container {
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  gap: 1rem;
+  padding-bottom: 2vh;
+}
+
+.deco1 {
+  width: 35%;
+}
+
+.deco2 {
+
+  width: 35%;
+
+  transform: rotateY(180deg);
+}
+
 /* PARKS */
 
 .parks {
@@ -95,9 +118,9 @@ header,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
 
   gap: 2rem;
 }
@@ -282,7 +305,7 @@ footer {
   }
 
   .parks {
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
 
   .info {
@@ -291,8 +314,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     padding: 3rem;
+    /* text-align: left; */
   }
 
 
@@ -303,6 +327,32 @@ footer {
     background-color: rgb(167, 167, 167);
   }
 
+  /* DECO */
+
+  .decoration-container {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    padding-bottom: 2vh;
+  }
+
+  .deco1 {
+    width: 25%;
+    object-fit: cover;
+  }
+
+  .deco2 {
+
+    width: 25%;
+    object-fit: cover;
+
+    transform: rotateY(180deg);
+  }
+
   .left-info,
   .right-info {
     width: 33%;
@@ -311,9 +361,14 @@ footer {
     gap: 2rem;
   }
 
+  .info {
+    padding: 2rem 3rem;
+    gap: 3rem;
+  }
 
   .info p {
     width: 100%;
+    text-align: left;
   }
 
 
@@ -343,7 +398,7 @@ footer {
   }
 
   .hero-header {
-    top: 45%;
+    top: 40%;
   }
 
   .hero-header h1 {
@@ -351,7 +406,7 @@ footer {
   }
 
   .parks {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .info {
@@ -362,6 +417,31 @@ footer {
     align-items: center;
     gap: 5rem;
     padding: 3rem;
+  }
+
+  /* DECO */
+
+  .decoration-container {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    gap: 0.5rem;
+    padding-bottom: 5vh;
+  }
+
+  .deco1 {
+    width: 20%;
+    object-fit: cover;
+  }
+
+  .deco2 {
+
+    width: 20%;
+    object-fit: cover;
+
+    transform: rotateY(180deg);
   }
 
 
@@ -383,21 +463,22 @@ footer {
 
   .info p {
     width: 100%;
+    text-align: left;
   }
 
 
   .park-wrapper img {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   .park-info {
     width: 25%;
-    right: 20%;
+    right: 25%;
     bottom: -3%;
   }
 
   .left {
-    right: 55%;
+    right: 50%;
   }
 
 }
@@ -418,11 +499,11 @@ footer {
   }
 
   .hero-img img {
-    height: 80vh;
+    height: 70vh;
   }
 
   .hero-header {
-    top: 45%;
+    top: 40%;
   }
 
   .hero-header h1 {
@@ -430,7 +511,7 @@ footer {
   }
 
   .parks {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .info {
@@ -441,6 +522,7 @@ footer {
     align-items: center;
     gap: 8rem;
     padding: 3rem;
+    text-align: left;
   }
 
 
@@ -449,6 +531,27 @@ footer {
     width: 70%;
     height: 1.85px;
     background-color: rgb(167, 167, 167);
+  }
+
+  /* DECO */
+
+  .decoration-container {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    gap: 0.5rem;
+    padding-bottom: 5vh;
+  }
+
+  .deco1 {
+    width: 15%;
+    object-fit: cover;
+  }
+
+  .deco2 {
+    width: 15%;
   }
 
   .left-info,
@@ -531,6 +634,23 @@ footer {
   }
 
 
+  .decoration-container {
+
+
+    gap: 0.5rem;
+    padding-bottom: 5vh;
+  }
+
+  .deco1 {
+    width: 13%;
+
+  }
+
+  .deco2 {
+    width: 13%;
+  }
+
+
   .info-hr {
     margin-left: 15%;
     width: 70%;
@@ -552,7 +672,7 @@ footer {
   }
 
   .parks {
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 
   .park-info {
@@ -577,7 +697,7 @@ footer {
   }
 
   .park-wrapper img {
-    max-width: 70%;
+    max-width: 65%;
   }
 
 }

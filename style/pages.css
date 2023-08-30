@@ -73,7 +73,13 @@ nav {
   object-fit: cover;
 }
 
+
+
 /* DESC */
+
+hr {
+  height: 1.05px;
+}
 
 .park-description {
 
@@ -127,6 +133,7 @@ nav {
   width: 80%;
   padding: 2rem 1rem;
   border: 1px solid black;
+  border-radius: 10px;
   background-color: var(--main-color);
 
   text-align: center;
@@ -161,6 +168,10 @@ nav {
 
   font-size: 15px;
   font-weight: 500;
+}
+
+.maps {
+  width: 90%;
 }
 
 /* BACK */
@@ -201,6 +212,11 @@ footer {
 /************ RESPONSIVE *************/
 
 @media (min-width:640px) and (max-width:1024px) {
+
+  .nav-container {
+    padding: 0.5rem 10%;
+  }
+
   .swiper {
     height: 70vh;
   }
@@ -238,7 +254,7 @@ footer {
   }
 
   .maps {
-    width: 270px;
+    width: 100%;
   }
 
   .back-button {
@@ -253,6 +269,10 @@ footer {
 }
 
 @media (min-width:1024px) and (max-width:1280px) {
+
+  .nav-container {
+    padding: 0.5rem 10%;
+  }
 
   .swiper {
     height: 80vh;
@@ -298,7 +318,7 @@ footer {
   }
 
   .maps {
-    width: 250px;
+    width: 95%;
   }
 
   button:hover {
@@ -316,8 +336,12 @@ footer {
     font-size: 1.5rem;
   }
 
+  .icon {
+    font-size: 1.45rem;
+  }
+
   .nav-container {
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 10%;
   }
 
   .swiper {
@@ -335,7 +359,7 @@ footer {
 
   .location-wrapper {
     align-items: flex-start;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 60%;
     flex-direction: row;
     padding: 3rem 2rem;
@@ -361,9 +385,9 @@ footer {
   }
 
   .left-location {
-    padding-left: 5%;
+    padding-left: 10%;
     width: 50%;
-    gap: 1.1rem;
+    gap: 1.5rem;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -394,6 +418,14 @@ footer {
 
   .nav-icon {
     font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-gallery-wrapper a {
+    font-size: 1rem;
   }
 
   .nav-container {
@@ -434,7 +466,8 @@ footer {
 
   .left-location {
     width: 50%;
-    gap: 1.5rem
+    gap: 1.5rem;
+
   }
 
   .name_coordinates {

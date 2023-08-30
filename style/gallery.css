@@ -98,8 +98,8 @@ header,
   align-items: center;
   justify-content: center;
 
-  padding-bottom: 3vh;
-  padding-top: 3vh;
+  padding-bottom: 2vh;
+  padding-top: 1vh;
 
   color: rgb(39, 39, 39);
 
@@ -129,7 +129,7 @@ header,
 .gallery-container {
 
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .image-wrapper {
@@ -147,6 +147,29 @@ header,
 .image-wrapper img {
   width: 100%;
   cursor: pointer;
+}
+
+/* DECO */
+
+.decoration-container {
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  gap: 1rem;
+  margin-top: 2vh;
+}
+
+.deco1 {
+  width: 35%;
+}
+
+.deco2 {
+
+  width: 35%;
+
+  transform: rotateY(180deg);
 }
 
 /* MODAL */
@@ -316,7 +339,7 @@ footer {
   /* GALLERY */
 
   .gallery-container {
-    margin-top: 5vh;
+    margin-top: 3vh;
 
   }
 
@@ -324,6 +347,23 @@ footer {
     width: 40%;
 
     margin-left: 30%;
+  }
+
+
+  /* DECO */
+
+  .decoration-container {
+    gap: 0.75rem;
+    margin-top: 2vh;
+  }
+
+  .deco1 {
+    width: 20%;
+  }
+
+  .deco2 {
+
+    width: 20%;
   }
 
 
@@ -400,6 +440,20 @@ footer {
     backdrop-filter: blur(6px); */
   }
 
+  .decoration-container {
+    gap: 0.75rem;
+    margin-top: 2vh;
+  }
+
+  .deco1 {
+    width: 15%;
+  }
+
+  .deco2 {
+
+    width: 15%;
+  }
+
   .modal {
     padding-top: 10vh;
   }
@@ -440,8 +494,27 @@ footer {
   }
 
   .gallery-container {
-    margin-top: 10vh;
+    margin-top: 5vh;
 
+  }
+
+  .gallery-text {
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+  }
+
+  .decoration-container {
+    gap: 0.75rem;
+    margin-top: 2vh;
+  }
+
+  .deco1 {
+    width: 15%;
+  }
+
+  .deco2 {
+
+    width: 15%;
   }
 
 
@@ -512,15 +585,29 @@ footer {
 
   }
 
-  .info-hr {
-    width: 30%;
+  .decoration-container {
+    gap: 0.75rem;
+    margin-top: 2vh;
+  }
 
-    margin-left: 35%;
+  .deco1 {
+    width: 10%;
+  }
+
+  .deco2 {
+
+    width: 10%;
+  }
+
+  .info-hr {
+    width: 20%;
+
+    margin-left: 40%;
   }
 
   .image-wrapper {
 
-    padding: 0 15rem;
+    padding: 0 20rem;
     gap: 3rem;
     row-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
