@@ -188,27 +188,14 @@ header,
   border-radius: 17px;
   background: rgba(217, 217, 217, 0.58);
 
-  transition: all 0.5s;
+
 
   object-fit: cover;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
 }
 
-.park-wrapper img:hover {
 
-  /* border: 1px solid black; */
-
-  transform: scale(1.009);
-
-  cursor: pointer;
-}
-
-.park-wrapper img:active {
-
-  transform: scale(1) rotateZ(0.4deg);
-  transition: all 0.2s;
-}
 
 .park-info {
 
@@ -669,6 +656,7 @@ footer {
 
   .info p {
     width: 100%;
+    text-align: left;
   }
 
   .parks {
