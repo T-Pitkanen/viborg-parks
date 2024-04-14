@@ -1,6 +1,4 @@
-@import url(../style.css/normalize.css);
-@import url(../style/reset.css);
-@import url(../style/var.css);
+
 
 /* NAV */
 
@@ -30,6 +28,7 @@ nav {
   font-family: var(--header-font);
   font-size: 0.75rem;
   text-decoration: none;
+  color: white;
 }
 
 .icon {
