@@ -19,5 +19,5 @@ The assignment was to build a website with a theme around photos you took in you
 
 
 <h2>Project status</h2>
-(https://t-pitkanen.github.io/viborg-parks/pages/gallery.html)
+(https://t-pitkanen.github.io/viborg-parks)
 
