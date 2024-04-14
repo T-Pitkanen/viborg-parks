@@ -1,6 +1,6 @@
-@import url(style/normalize.css);
-@import url(style/reset.css);
-@import url(style/var.css);
+@import url(../style.css/normalize.css);
+@import url(../style/reset.css);
+@import url(../style/var.css);
 
 
 /* NAV */
